@@ -13,5 +13,7 @@ This is seventh line
 
 fhand = open('mbox.txt')
 for line in fhand:
+    #to get rid off whitespace. \n newline is also a part of white spce
+    line = line.rstrip()
     if line.startswith('This'):
         print(line)
